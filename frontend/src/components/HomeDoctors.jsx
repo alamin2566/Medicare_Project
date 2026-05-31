@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Medal, ChevronRight, MouseOff } from 'lucide-react';
 
 const HomeDoctors =({previewCount=8}) => {
-  const API_BASE = import.meta.env.VITE_API_URL || "http://https://medicare-p53k.vercel.app";
+  const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
 
   const [doctors, setDoctors] = useState([]);
 

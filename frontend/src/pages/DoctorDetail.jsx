@@ -22,7 +22,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import { doctorDetailStyles } from "../assets/dummyStyles";
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://https://medicare-p53k.vercel.app";
+const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
 
 function getScheduleDates(schedule) {
   if (!schedule) return [];

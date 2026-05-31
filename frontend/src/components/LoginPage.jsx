@@ -8,7 +8,7 @@ import { ArrowLeft } from 'lucide-react'
 const STORAGE_KEY = "doctorToken_v1";
 
 const LoginPage = () => {
-   const API_BASE = import.meta.env.VITE_API_URL || "http://https://medicare-p53k.vercel.app";
+   const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
     const [formData, setFormData] = useState({email: "", password: ""});
     const [busy, setBusy] = useState(false);
     const navigate = useNavigate();

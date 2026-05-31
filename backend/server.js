@@ -16,6 +16,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://medicare-tr9e.vercel.app",
   "https://medicare-p53k.vercel.app",
+  "https://medicare-6t9x.vercel.app",
 ];
 
 app.use(cors({

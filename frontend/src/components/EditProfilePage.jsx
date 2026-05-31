@@ -57,7 +57,7 @@ function dedupeAndSortSchedule(schedule = {}) {
 export default function EditProfilePage({ apiBase }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const API_BASE = "http://https://medicare-p53k.vercel.app/api/doctors";
+  const API_BASE = "https://medicare-p53k.vercel.app/api/doctors";
 
   const [doc, setDoc] = useState(null);
   const [editing, setEditing] = useState(false);

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://https://medicare-p53k.vercel.app";
+const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
    
 const VerifyServicePaymentPage = () => {
    const location = useLocation();
