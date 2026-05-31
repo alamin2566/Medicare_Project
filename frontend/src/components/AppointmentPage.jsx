@@ -6,7 +6,7 @@ import { Bell, CalendarDays, CheckCircle, Clock, CreditCard, Wallet, XCircle } f
 import { useAuth, useUser } from '@clerk/clerk-react';
 import { Toaster } from 'react-hot-toast';
 
-const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
+const API_BASE = "https://medicare-p53k.vercel.app";
 
 const API = axios.create({
     baseURL: API_BASE,

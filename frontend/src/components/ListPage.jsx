@@ -5,7 +5,7 @@ import { listPageStyles } from './../assets/dummyStyles';
 import { X, SearchIcon ,Calendar, Phone} from 'lucide-react';
 
 
-const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
+const API_BASE = "https://medicare-p53k.vercel.app";
 
 
 

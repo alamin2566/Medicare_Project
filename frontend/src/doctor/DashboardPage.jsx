@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { dashboardStyles } from "../assets/dummyStyles";
 
-const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
+const API_BASE = "https://medicare-p53k.vercel.app";
 
 function parseDateTime(date, time) {
   return new Date(`${date}T${time}:00`);

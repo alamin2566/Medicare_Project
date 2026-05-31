@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const DoctorPage = () => {
 
-  const API_BASE = import.meta.env.VITE_API_URL || "https://medicare-p53k.vercel.app";
+  const API_BASE = "https://medicare-p53k.vercel.app";
 
     const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
