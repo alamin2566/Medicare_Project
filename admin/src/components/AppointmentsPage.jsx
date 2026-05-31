@@ -12,7 +12,7 @@ import {
   keyframesStyles,
 } from "../assets/dummyStyles";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "http://https://medicare-p53k.vercel.app";
 
 function formatDateISO(iso) {
   try {

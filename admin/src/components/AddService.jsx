@@ -5,7 +5,7 @@ import { CheckCircle, XCircle, AlertTriangle, Clock, ImageIcon, Plus, Trash2, Ca
 
 
 const AddService = ({serviceId}) => {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "http://https://medicare-p53k.vercel.app";
   
   const fileRef = useRef(null);
   const imageBlobUrlRef = useRef(null); // ✅ FIX: blob URL ref দিয়ে track করা হচ্ছে

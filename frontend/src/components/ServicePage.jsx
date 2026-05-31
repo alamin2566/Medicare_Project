@@ -107,7 +107,7 @@ const ServiceCard = ({ service }) => {
 
 const ServicePage = () => {
   
-   const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:4000";
+   const API_BASE = import.meta.env.VITE_API_URL || "http://https://medicare-p53k.vercel.app";
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

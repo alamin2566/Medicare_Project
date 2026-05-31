@@ -3,7 +3,7 @@ import { serviceAppointmentsStyles } from '../assets/dummyStyles';
 import { CheckCircle, XCircle, Loader2, Search, X, User, Phone, BadgeIndianRupee, Calendar, Clock } from 'lucide-react';
 
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "http://https://medicare-p53k.vercel.app";
 
 //Helper function
 
