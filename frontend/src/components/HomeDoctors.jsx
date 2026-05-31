@@ -31,8 +31,7 @@ const HomeDoctors =({previewCount=8}) => {
           setLoading(false);
           return;
         }
-        const items = (json && (json.data || json)) || [];
-        const normalized = (Array.isArray(items) ? items : []).map((d) => {
+const items = (json && (Array.isArray(json.data) ? json.data : Array.isArray(json) ? json : [])) || [];        const normalized = (Array.isArray(items) ? items : []).map((d) => {
           const id = d._id || d.id;
           const image =
             d.imageUrl || d.image || d.imageSmall || d.imageSrc || "";
