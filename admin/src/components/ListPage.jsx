@@ -109,7 +109,7 @@ function getSortedScheduleDates(scheduleLike) {
 }
 
 const ListPage = () => {
-  const API_BASE = "http://https://medicare-p53k.vercel.app";
+  const API_BASE = "https://medicare-p53k.vercel.app";
 
   const [doctors, setDoctors] = useState([]);
   const [expanded, setExpanded] = useState(null);

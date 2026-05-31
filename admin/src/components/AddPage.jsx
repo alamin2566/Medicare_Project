@@ -195,7 +195,7 @@ const AddPage = () => {
       fd.append("schedule", JSON.stringify(form.schedule || {}));
       if (form.imageFile) fd.append("image", form.imageFile);
 
-      const API_BASE = "http://https://medicare-p53k.vercel.app/api";
+      const API_BASE = "https://medicare-p53k.vercel.app/api";
       const res = await fetch(`${API_BASE}/doctors`, {
         method: "POST",
         body: fd,

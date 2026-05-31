@@ -49,7 +49,7 @@ function normalizeService(doc) {
   };
 }
 
-const API_BASE = "http://https://medicare-p53k.vercel.app";
+const API_BASE = "https://medicare-p53k.vercel.app";
 
 function StatCard ({icon, label, value}) {
   return (
