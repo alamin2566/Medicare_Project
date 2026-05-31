@@ -11,22 +11,8 @@ import serviceAppointmentRouter from './routes/serviceAppointmentRouter.js';
 
 const app = express();
 
-const allowedOrigins = [
-  "http://localhost:5173",
-  "http://localhost:5174",
-  "https://medicare-tr9e.vercel.app",
-  "https://medicare-p53k.vercel.app",
-  "https://medicare-6t9x.vercel.app",
-];
-
 app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin) return callback(null, true);
-        if (allowedOrigins.includes(origin)) {
-            return callback(null, true);
-        }
-        return callback(new Error('Not allowed by CORS'));
-    },
+    origin: true,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
@@ -46,6 +32,5 @@ app.use("/api/service-appointments", serviceAppointmentRouter);
 app.get('/', (req, res) => {
   res.send('API WORKING');
 });
-
 
 export default app;
