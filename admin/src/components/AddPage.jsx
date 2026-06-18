@@ -216,7 +216,7 @@ const AddPage = () => {
         try { localStorage.setItem("token", data.token); } catch (err) {}
       }
 
-      // ✅ FIX: snapshot form BEFORE resetting it, so the card always has correct data
+  
       const doctorFromServer = data?.data
         ? data.data
         : {
@@ -227,7 +227,7 @@ const AddPage = () => {
             imagePreview: form.imagePreview,
           };
 
-      // ✅ FIX: add to list BEFORE resetting form
+    
       setDoctorList((old) => [doctorFromServer, ...old]);
 
       // revoke the object URL only after we've captured it above
