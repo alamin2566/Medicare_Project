@@ -8,7 +8,7 @@ const AddService = ({serviceId}) => {
   const API_BASE = "https://medicare-p53k.vercel.app";
   
   const fileRef = useRef(null);
-  const imageBlobUrlRef = useRef(null); // ✅ FIX: blob URL ref দিয়ে track করা হচ্ছে
+  const imageBlobUrlRef = useRef(null); 
 
   const [imagePreview, setImagePreview] = useState(null);
   const [imageFile, setImageFile] = useState(null);
@@ -117,7 +117,7 @@ const AddService = ({serviceId}) => {
     return () => { mounted = false; };
   }, [serviceId, API_BASE]);
 
-  // ✅ FIX: ref দিয়ে blob URL revoke করা হচ্ছে — stale closure সমস্যা নেই
+
   function clearBlobUrl() {
     if (imageBlobUrlRef.current) {
       try { URL.revokeObjectURL(imageBlobUrlRef.current); } catch (e) {}
@@ -128,9 +128,9 @@ const AddService = ({serviceId}) => {
   function handleImageChange(e) {
     const f = e.target.files?.[0];
     if (!f) return;
-    clearBlobUrl(); // ✅ FIX
+    clearBlobUrl(); 
     const newUrl = URL.createObjectURL(f);
-    imageBlobUrlRef.current = newUrl; // ✅ FIX: ref এ save করা
+    imageBlobUrlRef.current = newUrl; 
     setImageFile(f);
     setImagePreview(newUrl);
     setRemoveImage(false);
@@ -139,7 +139,7 @@ const AddService = ({serviceId}) => {
   }
 
   function handleRemoveImage() {
-    clearBlobUrl(); // ✅ FIX
+    clearBlobUrl(); 
     setImagePreview(null);
     setImageFile(null);
     setHasExistingImage(false);
@@ -305,7 +305,7 @@ const AddService = ({serviceId}) => {
           setImageExists(Boolean(saved.imageUrl));
           setImageFile(null);
           setRemoveImage(false);
-          imageBlobUrlRef.current = null; // ✅ FIX: ref clear করা
+          imageBlobUrlRef.current = null; 
         }
       }
     } catch (err) {
